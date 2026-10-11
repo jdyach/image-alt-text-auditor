@@ -1,0 +1,154 @@
+/* =============================================================================
+   Image Alt Text Auditor — Admin Styles
+   ============================================================================= */
+
+/* Page layout */
+.iata-wrap {
+    max-width: 1200px;
+}
+
+.iata-subtitle {
+    font-size: 14px;
+    color: #50575e;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+/* All-clear state */
+.iata-all-clear {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #edfaee;
+    border: 1px solid #00a32a;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-top: 16px;
+    max-width: 480px;
+}
+
+.iata-all-clear .dashicons {
+    color: #00a32a;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.iata-all-clear p {
+    margin: 0;
+    font-size: 14px;
+    color: #00a32a;
+    font-weight: 600;
+}
+
+/* Table column widths */
+.iata-table .iata-col-thumb  { width: 90px; }
+.iata-table .iata-col-file   { width: 22%; }
+.iata-table .iata-col-date   { width: 120px; }
+.iata-table .iata-col-alt    { width: auto; }
+.iata-table .iata-col-action { width: 220px; }
+
+/* Thumbnail cell */
+.iata-col-thumb img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.iata-no-thumb {
+    font-size: 48px;
+    color: #c3c4c7;
+    display: block;
+}
+
+/* Alt text input */
+.iata-alt-input {
+    margin-bottom: 4px !important;
+}
+
+/* Inline status feedback */
+.iata-status {
+    display: block;
+    font-size: 12px;
+    min-height: 16px;
+    line-height: 16px;
+}
+
+.iata-status.saving { color: #50575e; }
+.iata-status.saved  { color: #00a32a; font-weight: 600; }
+.iata-status.error  { color: #d63638; font-weight: 600; }
+
+/* Action buttons */
+.iata-col-action .button {
+    margin-right: 6px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+}
+
+/* Row fade-out after successful save */
+@keyframes iata-fade-out {
+    0%   { opacity: 1; }
+    60%  { opacity: 1; background-color: #edfaee; }
+    100% { opacity: 0; max-height: 0; padding: 0; overflow: hidden; }
+}
+
+.iata-row-saved {
+    animation: iata-fade-out 1.6s ease forwards;
+}
+
+/* Pagination */
+.iata-pagination {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.iata-pagination .page-numbers {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    padding: 0 6px;
+    border: 1px solid #c3c4c7;
+    border-radius: 3px;
+    background: #fff;
+    color: #2271b1;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 0 2px;
+}
+
+.iata-pagination .page-numbers.current {
+    background: #2271b1;
+    color: #fff;
+    border-color: #2271b1;
+}
+
+.iata-pagination .page-numbers:hover:not(.current) {
+    background: #f0f6fc;
+    border-color: #2271b1;
+}
+
+/* Dashboard widget */
+.iata-widget-good,
+.iata-widget-warn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.iata-widget-good { color: #00a32a; }
+.iata-widget-warn { color: #d63638; }
+
+.iata-widget .dashicons {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
