@@ -2,6 +2,10 @@
 
 A WordPress plugin that audits your media library for images missing alt text and lets you fix them inline, without leaving the admin.
 
+[![Try it live in WordPress Playground](https://img.shields.io/badge/Try%20it%20live-WordPress%20Playground-3858e9?logo=wordpress&logoColor=white&style=for-the-badge)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/jdyach/image-alt-text-auditor/main/_playground/blueprint.json)
+
+The live demo runs a real WordPress site in your browser with this plugin, the [Fieldnote](https://github.com/jdyach/fieldnote) block theme and six sample images. It opens the audit screen listing the four images that are missing alt text: type a description and click **Save**, and the image drops off the list without a page reload. Nothing to install.
+
 ## Features
 
 - **Dashboard widget** — shows a count of images missing alt text at a glance; links directly to the audit page
