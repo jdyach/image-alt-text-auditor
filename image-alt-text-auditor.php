@@ -4,7 +4,7 @@
  * Plugin URI:        https://github.com/jdyach/image-alt-text-auditor
  * Description:       Audits your media library for images missing alt text and provides an admin page and dashboard widget to review and fix them inline.
  * Version:           1.0.0
- * Author:            Jacqui Dyachenko
+ * Author:            Jacqui Dyach
  * Author URI:        https://jacquid.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
